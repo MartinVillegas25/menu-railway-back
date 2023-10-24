@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pantalla del publico</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylechat-dashboard.css">
+
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            
+            <td>
+                <table>
+                    <tr>
+                        <td valign="middle" class="ticket-actual">
+                            <span id="lblTicket1" class="ticket-actual-numero"></span>
+                            <br>
+                            <span id="lblEscritorio1" class="ticket-actual-escritorio"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="lblTicket2" class="ticket-secundario"></span>
+                            <br>
+                            <span id="lblEscritorio2"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="lblTicket3" class="ticket-secundario"></span>
+                            <br>
+                            <span id="lblEscritorio3"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span id="lblTicket4" class="ticket-secundario"></span>
+                            <br>
+                            <span id="lblEscritorio4"></span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <div class="container-fluid">
+
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content -->
+        <!-- ============================================================== -->
+        <div class="row animated fadeIn">
+            <div class="col-12">
+                <div class="card m-b-0">
+                    <!-- .chat-row -->
+                    <div class="chat-main-box">
+                        <!-- .chat-left-panel -->
+                        <div class="chat-left-aside">
+                            <div class="open-panel"><i class="ti-angle-right"></i></div>
+                            <div class="chat-left-inner">
+                                <ul class="chatonline style-none" id="divUsuarios"> </ul>
+                            </div>
+                        </div>
+                        <!-- .chat-left-panel -->
+                        <!-- .chat-right-panel -->
+                        <div class="chat-right-aside">
+                            <div class="chat-main-header">
+                                <div class="p-20 b-b">
+                                    <h3 class="box-title">Sala de Chat </small></h3>
+                                </div>
+                            </div>
+  
+                            <div class="chat-rbox">
+                                <ul class="chat-list p-20" id="divChatbox">
+                                </ul>
+                            </div>
+                            <div class="card-body b-t">
+  
+                                <form id="formEnviar">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <input autocomplete="off" id="txtMensaje" placeholder="Escribe tu mensaje aquí" class="form-control b-0" autofocus>
+                                        </div>
+                                        <div class="col-4 text-right">
+                                            <button type="submit" class="btn btn-info btn-circle"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA60lEQVR4nO3UIUtEQRDA8RVFDwQNJsGgd8VisWq8atFutBqtRqvcBzgwWu8rHCaDRssFk0kRLCL6E2EfDijeg/eeGu7fZtmZP8zuTEoTyoJL7GMmNYFPRjjCYlOCgkecYqVuwS6GIX5GHxu1CEK8iTO8BNmHeAdTlQXhfBUneAiiGxyiVVlQgIVc9DaI7nCMpTSOkLSOuR/uzebvfBVyntBDp4yg4D7Pxnlu0QG6aIecbQzwlnNec9ytIlguIdj6uxalph85fT1f++abXueWtf7foGl6VfzGshvlx5yvpXAQXGAP07UWnpDG8A4vn2hPL/zJ8AAAAABJRU5ErkJggg==">
+
+
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+  
+                            </div>
+                        </div>
+                        <!-- .chat-right-panel -->
+                    </div>
+                    <!-- /.chat-row -->
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End PAge Content -->
+        <!-- ============================================================== -->
+  
+    </div>
+
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./js/publico.js"></script>
+
+</body>
+
+</html>
