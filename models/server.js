@@ -28,7 +28,14 @@ class Server {
 		//directorio static
 		this.app.use(express.static('public'));
 
-		this.app.use(cors());
+		const corsOptions = {
+			origin: 'https://menu-railway-front-production.up.railway.app',
+			methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+			credentials: true, // Habilitar si estás utilizando cookies o sesiones
+		  };
+		  
+		  // Aplica el middleware de CORS con las opciones configuradas
+		this.app.use(cors(corsOptions));
 		this.app.use(morgan('dev'));
 
 		//para obtener datos del front en json
