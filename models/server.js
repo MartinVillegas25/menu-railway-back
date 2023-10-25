@@ -28,7 +28,11 @@ class Server {
 		//directorio static
 		this.app.use(express.static('public'));
 
-		this.app.use(cors());
+		this.app.use(cors({
+			origin: 'https://menu-app-git-main-franbosco.vercel.app/', 
+			methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+			credentials: true
+	}));
 		this.app.use(morgan('dev'));
 
 		//para obtener datos del front en json
