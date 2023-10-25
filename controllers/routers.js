@@ -683,7 +683,7 @@ const mostrarPlanes = async (req, res) => {
 	const query = 'SELECT * FROM planes';
 	try {
 		const result = await pool.query(query);
-		res.json(result[0][0]);
+		res.send(result[0][0]);
 	} catch (error) {
 		console.log(error, 'error en obtener datos');
 	}
