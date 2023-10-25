@@ -4,11 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
-    "dev": "node index.js",
-=======
-    "dev": "node index.js", 
->>>>>>> e7d4fa2aae9f7d85192016d607143b198fc2bbe6
+    "dev": "nodemon index.js",
     "start": "node index.js"
   },
   "author": "duwoh developers",
