@@ -29,7 +29,7 @@ class Server {
 		this.app.use(express.static('public'));
 
 		this.app.use(cors({
-			origin: 'https://menu-app-bpb3.vercel.app/', 
+			origin: 'https://menu-app-git-main-franbosco.vercel.app/', 
 			methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
 			credentials: true
 	}));
