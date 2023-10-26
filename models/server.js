@@ -52,7 +52,7 @@ class Server {
 	}
 
 	router() {
-		this.app.use(this.paths.main, require('../routes/routes'));
+		this.app.use("/", require('../routes/routes'));
 	}
 	sockets() {
 		this.io.on('connection', socketController);
